@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+            
+        body {
+            font: normal normal 1.1em Arial, Helvetica, sans-serif;
+        } 
+
+        a {
+            color: rgb(190, 49, 49);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: rgb(45, 92, 192)
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:active {
+            background-color: blueviolet;
+        }
+
+        a::after {
+            content: " [link]";
+            text-decoration: none;
+            font-weight: normal;
+            color: lightgray;
+        }
+
+
+    </style>
+    
+</head>
+<body>
+    <h1>Personalisando links</h1>
+    <ul>
+        <li><a target="_blank" href="https://www.sbt.com.br/">SBT</a></li>
+        <li><a target="_blank" href="https://www.uol.com.br/">UOL</a></li>
+        <li><a target="_blank" href="https://www.globo.com/">Globo.com</a></li>
+        <li><a target="_blank" href="https://www.r7.com/">Record</a></li>
+        <li><a target="_blank" href="https://www.redetv.uol.com.br/">RedeTV!</a></li>
+        <li><a target="_blank" href="https://www.adventistas.com">Adventistas</a></li>
+    </ul>
+</body>
+</html>

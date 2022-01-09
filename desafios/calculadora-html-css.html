@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script>
+        function Calculator() {
+            this.add = function(a, b) {
+                var sumNumb1 = document.getElementById("sum1");
+                var sumNumb2 = document.getElementById("sum2");
+                var result = document.getElementById("showResultSum");
+
+                var a = parseInt(sumNumb1.value);
+                var b = parseInt(sumNumb2.value);
+
+                result.innerHTML = a + b;
+            }
+            this.sub = function(a, b) {
+                var subNumb1 = document.getElementById("sub1");
+                var subNumb2 = document.getElementById("sub2");
+                var result = document.getElementById("showResultSub");
+
+                var a = parseInt(subNumb1.value);
+                var b = parseInt(subNumb2.value);
+
+                result.innerHTML = a - b;
+            }
+            this.multiply = function(a, b) {
+                var multNumb1 = document.getElementById("mult1");
+                var multNumb2 = document.getElementById("mult2");
+                var result = document.getElementById("showResultMult");
+
+                var a = parseInt(multNumb1.value);
+                var b = parseInt(multNumb2.value);
+
+                result.innerHTML = a * b;
+            }
+            this.divide = function(a, b) {
+                var divNumb1 = document.getElementById("div1");
+                var divNumb2 = document.getElementById("div2");
+                var result = document.getElementById("showResultDiv");
+
+                var a = parseInt(divNumb1.value);
+                var b = parseInt(divNumb2.value);
+
+                result.innerHTML = a / b;
+            }
+        }
+
+        var calc = new Calculator();
+
+    </script>
+        <style>
+            * {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            body {
+                background-image: linear-gradient(to bottom, #3439E6, #A2E887);
+                background-attachment:fixed;
+            }
+
+            h1, h2 {
+                text-align: center;
+                
+            }
+
+            .operations {
+                text-align: center;
+                padding: 1.2em;
+            }
+
+            .opName {
+                color: rgb(34, 34, 34);
+                padding: 1em;
+                                
+            }
+
+            .spanRes {
+                padding: 1em;
+                border: 1em #E67D4C;
+                margin: 1em;
+                color: #ffffff;
+                font-size: 1.1em;
+            }
+
+        </style>
+
+</head>
+<body>
+    <h2>Calculadora</h2>
+    <div class="operations">
+        <p class="opName">Sum</p>
+        <input class="numberIns" type="text" name="" id="sum1" value=""> +
+        <input class="numberIns" type="text" name="" id="sum2" value="">
+        <input type="button" value="Result" onclick="calc.add()">
+        <span class="spanRes" id="showResultSum"></span>
+    </div>
+    <br>
+    <div class="operations">
+        <p class="opName">Subtract</p>
+        <input class="numberIns" type="text" name="" id="sub1" value=""> -
+        <input class="numberIns" type="text" name="" id="sub2" value="">
+        <input type="button" value="Result" onclick="calc.sub()">
+        <span class="spanRes" id="showResultSub"></span>
+    </div>
+    <br>
+    <div class="operations">
+        <p class="opName">Multiply</p>
+        <input class="numberIns" type="text" name="" id="mult1" value=""> x
+        <input class="numberIns" type="text" name="" id="mult2" value="">
+        <input type="button" value="Result" onclick="calc.multiply()">
+        <span class="spanRes" id="showResultMult"></span>
+    </div>
+    <br>
+    <div class="operations">
+        <p class="opName">Divide</p>
+        <input class="numberIns" type="text" name="" id="div1" value=""> /
+        <input class="numberIns" type="text" name="" id="div2" value="">
+        <input type="button" value="Result" onclick="calc.divide()">
+        <span class="spanRes" id="showResultDiv"></span>
+    </div>
+    <br>
+</body>
+</html>

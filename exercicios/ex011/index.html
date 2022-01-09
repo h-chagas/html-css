@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente ou diminua o tamanho de seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="images/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="images/foto-m.png" type="image/png">
+        <img src="images/foto-g.png" alt="imagem flexivel">
+    </picture>
+
+    <h1>Aprendendo a inserir audio no meu website</h1>
+    <audio src="midia/Leaning On the Everlasting Arms - Zachariah Hickman.mp3"></audio>
+    <!-- atributos para audio: 
+        autoplay - a mudica assim que o site abre
+        loop - a musica nao para
+        controls - mostra os botoes de controle do audio
+        preload="metadata" - mostra informacoes sobre o audu=io
+    -->
+
+
+</body>
+</html>

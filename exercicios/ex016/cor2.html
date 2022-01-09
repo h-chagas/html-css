@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        * { /*Configuracao Global das CSS */ 
+            height: 100%; /*configura os styles/elementos para ser espalhado em 100% da tela, e nao apenas em parte dela (pode deixar a tela muito comprida...) */
+        }
+        body {
+            /*pode ser to bottom, to top, 45 deg, */
+            background-image: linear-gradient(45deg, #3E69C9, #A337AE, #F14C59, #FF643F, #FF9447, #E34471);
+            background-attachment: fixed; /*Deixa fixo o background*/
+        }
+
+        /*body {      GRADIENTE CIRCULAR
+            background-image: radial-gradient(circle, #3E69C9, #A337AE, #F14C59, #FF643F, #FF9447, #E34471);
+            background-attachment: fixed;
+        }*/
+
+        /*body {      AUMENTAR A PORCENTAGEM DE COR EXPOSTA NA TELA
+            background-image: linear-gradient(45deg, #3E69C9 50%, #A337AE 30%, #F14C59, #FF643F, #FF9447 2%, #E34471);
+            background-attachment: fixed; 
+        }*/
+        
+
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>   
+    <p>Instagram</p>
+</body>
+</html>

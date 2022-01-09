@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 7 - Imagem Flexivel</title>
+</head>
+<body>
+    <h1>Imagem flexivel</h1>
+    <p>Voce esta vendo a imagem completa? Experimente ampliar o tamanho da sua janela para aproveitar a melhor experiencia! &#128516 </p>
+    <picture>
+        <source media="(max-width: 520px)" srcset="\images\web-img\image300.jpg" type="image/jpeg">
+        <source media="(max-width: 720px)" srcset="\images\web-img\image500.jpg" type="image/jpeg">
+        <img src="images/web-img/image700.jpg" alt="menino no canyon">
+    </picture>
+</body>
+</html>
