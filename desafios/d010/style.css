@@ -32,7 +32,7 @@ header {
     color: white;
     font-family: var(--feature-font);
     margin: auto;
-    width: 100%;
+    width: 103.5%;
     
 }
 
@@ -183,6 +183,7 @@ div > iframe {
 aside {
     margin-top: 20px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.459);
+    border-radius: 2px;
 }
 
 #asideDiv {
@@ -215,11 +216,16 @@ aside > #titleDiv {
 
 #asideDiv > p {
     text-indent: 20px;
+    
 }
 
 #asideDiv ul {
     list-style-type: '\2705\00A0\00A0';
     columns: 2;
+}
+
+#lastPar {
+    padding: 20px 0px;
 }
 
 footer {
@@ -228,6 +234,7 @@ footer {
     padding: 5px;
     font-size: 0.9em;
     text-align: center;
+    width: 101.5%;
     
 }
 
